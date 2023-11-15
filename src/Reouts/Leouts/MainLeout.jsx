@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
+import Navber from "../../Compunents/Header/Navber";
 
 
 const MainLeout = () => {
     return (
         <div>
-            <h1 className="text-4xl font-bold text-center">MY WEBSITE LEOUTS</h1>
+           <Navber></Navber>
             <Outlet></Outlet>
         </div>
     );
