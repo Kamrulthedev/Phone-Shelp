@@ -12,7 +12,8 @@ const MyReactReouter = createBrowserRouter([
         children:[
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: ()=> fetch("Phone-shop.json")
             },
             {
                 path:'/Favorite',
