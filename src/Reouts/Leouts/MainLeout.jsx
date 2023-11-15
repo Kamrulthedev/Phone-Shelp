@@ -4,7 +4,7 @@ import Navber from "../../Compunents/Header/Navber";
 
 const MainLeout = () => {
     return (
-        <div>
+        <div className="max-w-[1300px] mx-auto">
            <Navber></Navber>
             <Outlet></Outlet>
         </div>

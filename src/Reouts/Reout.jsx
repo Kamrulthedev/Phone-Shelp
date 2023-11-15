@@ -15,11 +15,11 @@ const MyReactReouter = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path:'/',
+                path:'/Favorite',
                 element:<Favorite></Favorite>
             },
             {
-                path:'/',
+                path:'/Login',
                 element: <Login></Login>
             }
         ]
