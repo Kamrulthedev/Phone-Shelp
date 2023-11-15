@@ -9,7 +9,7 @@ const Phone = ({phones}) => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
                  
-                 phones?.map(phone => <PhoneCart key={phone.id}></PhoneCart>)
+                 phones?.map(phone => <PhoneCart key={phone.id} phone={phone}></PhoneCart>)
 
                 }
             </div>
