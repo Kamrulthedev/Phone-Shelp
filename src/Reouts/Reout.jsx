@@ -4,6 +4,8 @@ import Home from "../Peges/Home/Home";
 import Favorite from "../Peges/Favorite/Favorite";
 import Login from "../Peges/Login/Login";
 import ErrorEliment from "../Peges/ErrorElement/ErrorEliment";
+import Phoneded from "../Peges/Phoneded/Phoneded";
+
 
 
 const MyReactReouter = createBrowserRouter([
@@ -15,7 +17,7 @@ const MyReactReouter = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: ()=> fetch("Phone-shop.json")
+                loader: ()=> fetch(`Phone-shop.json`)
             },
             {
                 path:'/Favorite',
@@ -26,8 +28,9 @@ const MyReactReouter = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: '/phones:id',
-                element: 
+                path: "/phonesess/:id",
+                element: <Phoneded></Phoneded>,
+                loader: ()=> fetch(`Phone-shop.json`)
             }
         ]
     }
