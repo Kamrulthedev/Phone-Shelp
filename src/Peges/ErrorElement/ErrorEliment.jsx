@@ -2,10 +2,12 @@
 
 const ErrorEliment = () => {
     return (
-        <div className="h-screen justify-center items-center text-center text-4xl font-bold">
-            <div>
+        <div className="  items-center text-center text-4xl font-bold">
+            <div className="mt-80">
             <h1 >ERROR</h1>
-            <h2>This is error pages</h2>
+            <div className="justify-center items-center text-center">
+            <img  src={`https://i.ibb.co/QmSRhH8/1-10.webp`} alt="" />
+            </div>
             </div>
         </div>
     );
