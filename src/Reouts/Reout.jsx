@@ -24,6 +24,10 @@ const MyReactReouter = createBrowserRouter([
             {
                 path:'/Login',
                 element: <Login></Login>
+            },
+            {
+                path: '/phones:id',
+                element: 
             }
         ]
     }
