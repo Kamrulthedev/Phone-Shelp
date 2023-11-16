@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 
 
 const PhoneCart = ({phone}) => {
 
     const {brand_name, id, image, phone_name
-  , price, raring} = phone 
+  , price, rating} = phone 
     
 
 
@@ -13,36 +14,29 @@ const PhoneCart = ({phone}) => {
                 <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-96 rounded-xl bg-clip-border">
                     <img
                         src={image}
-                        className="object-cover w-full h-full"
-                    />
+                        className="object-cover w-full h-full"/>
                 </div>
+                
                 <div className="p-6">
-                 
-
-                <p className="block bg-green-500 font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                        {phone_name}
-                        </p>
+                  <p className="block bg-green-500 font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                        {brand_name}</p>
                     <div className="flex items-center justify-between mb-2">
                        
                         <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                        {phone_name}
-                        </p>
+                        {phone_name}</p>
                         <p className="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                           {price}
-                        </p>
-                    </div>
-                    <p className="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
-                        With plenty of talk and listen time, voice-activated Siri access, and an
-                        available wireless charging case.
-                    </p>
+                           {price}</p>
+                        </div>
+                </div>
+                <div>
+                    <p className="ml-8 -mt-8">{rating}</p>
                 </div>
                 <div className="p-6 pt-0">
-                    <button
-                        className="block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                        type="button"
-                    >
-                        Add to Favorite
-                    </button>
+                 <Link to={`/phones/${id}`}>
+                 <button
+                        className="block w-full select-none rounded-lg bg-zinc-300 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button">Add to Favorite</button>
+                 </Link>
                 </div>
             </div>
         </div>

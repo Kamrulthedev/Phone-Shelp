@@ -3,12 +3,14 @@ import MainLeout from "./Leouts/MainLeout";
 import Home from "../Peges/Home/Home";
 import Favorite from "../Peges/Favorite/Favorite";
 import Login from "../Peges/Login/Login";
+import ErrorEliment from "../Peges/ErrorElement/ErrorEliment";
 
 
 const MyReactReouter = createBrowserRouter([
     {
         path:'/',
         element: <MainLeout></MainLeout>,
+        errorElement:<ErrorEliment></ErrorEliment>,
         children:[
             {
                 path: '/',
