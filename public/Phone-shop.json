@@ -151,4 +151,33 @@
       "price": 9882.99,
       "rating": 9.3
     }
+    ,
+    {
+      "id": "19",
+      "image": "https://i.ibb.co/QfNVXM3/Infinix-GT-10-Pro-Review.webp",
+      "phone_name": "Infinix-GT-10",
+      "brand_name": "Infinix",
+      "price": 7082.00,
+      "rating": 6.3
+    }
+    ,
+    {
+      "id": "20",
+      "image": "https://i.ibb.co/6RSrXyL/3959745602.webp",
+      "phone_name": "Oppo Reno 9 pro",
+      "brand_name": "Oppo",
+      "price": 18002.10,
+      "rating": 5.3
+    }
+    ,
+    {
+      "id": "21",
+      "image": "https://i.ibb.co/7jgTxGF/1688631318-Oppo-Reno-10-Pro-specs-1-800x800-four-to-three.webp",
+      "phone_name": "Oppo Reno 10 pro",
+      "brand_name": "Oppo",
+      "price": 19002.60,
+      "rating": 5.3
+    }
+    
+
   ]
