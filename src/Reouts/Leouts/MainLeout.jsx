@@ -6,7 +6,9 @@ const MainLeout = () => {
     return (
         <div className="max-w-[1300px] mx-auto">
            <Navber></Navber>
-            <Outlet></Outlet>
+        <div className="py-4">
+        <Outlet></Outlet>
+        </div>
         </div>
     );
 };

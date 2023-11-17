@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "image": "https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg",
+      "image": "https://i.ibb.co/HVfGGn6/image-2022-08-11t101143-915.jpg",
       "phone_name": "iPhone 14 Pro Max",
       "brand_name": "Apple",
       "price": 799.99,
@@ -9,7 +9,7 @@
     },
     {
       "id": "2",
-      "image": "https://static-01.daraz.com.bd/p/1ec88cbfff48b223f1dbb92ce20df4ec.jpg",
+      "image": "https://i.ibb.co/Fb5mZZW/03-AFXf-XUHf-QA8i4qv3c-OUUZ-11.webp",
       "phone_name": "iPhone 14 Pro",
       "brand_name": "Apple",
       "price": 899.99,
@@ -17,7 +17,7 @@
     },
     {
       "id": "3",
-      "image": "https://static-01.daraz.com.bd/p/986dd21bae23af5b4186e0029dce42a7.jpg",
+      "image": "https://i.ibb.co/tmRz869/apple-iphone-12-pro-max-space-1677908405-7063ea7c-progressive.jpg",
       "phone_name": "iPhone 12",
       "brand_name": "Apple",
       "price": 999.99,
@@ -76,7 +76,7 @@
     {
       "id": "10",
       "image": "https://static-01.daraz.com.bd/p/ff3deae774e41a9491019b2d893d5a4c.jpg",
-      "phone_name": "Xiaomi Redmi Note",
+      "phone_name": "Xiaomi Redmi Note 12C",
       "brand_name": "Xiaomi",
       "price": 1299.99,
       "rating": 3.9
@@ -136,7 +136,7 @@
     ,
     {
       "id": "17",
-      "image": "https://i.ibb.co/bXJgdBL/images.jpg",
+      "image": "https://i.ibb.co/C1hXWLP/Foto-Jet-7-19-635x430.jpg",
       "phone_name": "Vivo  X70 Pro Plus",
       "brand_name": "Vivo",
       "price": 2982.99,
