@@ -1,8 +1,49 @@
 import React from "react";
+import swal from "sweetalert";
 
 const PhonededCert = ({ phone }) => {
     const { brand_name, id, image, phone_name
         , price, rating } = phone || {}
+
+
+        const handlerAddtoFavorite= ()=>{
+            const AddFavoriteItem = [];
+
+            const FevoriteItem = JSON.parse(localStorage.getItem('Favorite'))
+            if(!FevoriteItem){
+                AddFavoriteItem.push(phone)
+                localStorage.setItem('Favorite', JSON.stringify(AddFavoriteItem))
+                swal("Good job!", "This Item is Favorite", "success");
+            }
+            else{
+
+
+                const isExits = FevoriteItem.find(phone => phone.id == id)
+                if(!isExits){
+                    AddFavoriteItem.push(...FevoriteItem, phone)
+                    localStorage.setItem('Favorite', JSON.stringify(AddFavoriteItem))
+                    
+                    swal("Good job!", "This Item is Favorite", "success");
+
+                }
+                else{
+                    swal("Error", "Alredy booked Item", "success");
+                }
+
+
+
+
+
+
+               
+            }
+
+           
+          
+
+
+            // localStorage.setItem('text', JSON.stringify([{name: 'Kamrul', class: 'Ilaven'}]))
+        }
 
     return (
         <div>
@@ -24,8 +65,8 @@ const PhonededCert = ({ phone }) => {
                     </div>
 
                     <div className="mt-24">
-                        <a className="inline-block" href="#">
-                            <button
+                 
+                            <button onClick={handlerAddtoFavorite}
                                 className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-pink-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                 type="button">ADD TO FAVORITE<svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +83,7 @@ const PhonededCert = ({ phone }) => {
                                     ></path>
                                 </svg>
                             </button>
-                        </a>
+                      
                     </div>
                 </div>
             </div>

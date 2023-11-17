@@ -10,7 +10,7 @@ const Phoneded = () => {
     const idInt = parseInt(id);
     const phones = useLoaderData()
     useEffect(() => {
-        const findphone = phones?.find(phone => phone.id == idInt)
+        const findphone = phones.find(phone => phone.id == idInt)
         setPhone(findphone)
     }, [idInt, phones])
 
